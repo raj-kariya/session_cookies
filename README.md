@@ -49,7 +49,7 @@ This session is associated with a randomly generated unique ID, which is created
 
 - When a browser request a web page, the server create a cookie and return it to the browser as part of the response. The browser then store that cookie in the user’s computer.Cookies have a expired date that’s set by the server, when that date come, the cookie will be deleted from the user’s browser.The browser send back that cookie each time it request a web page from that server. Browsers generally accept only **20 cookie from each site, and 300 cookies in total**.
 
-###Summary 
+### Summary 
 - Cookies are text string stored as key/value
 - The server Create the cookie and send it to the user’s browser where it’ll be stored.
 - The Browser will send that cookie every time it send a request to that server.
