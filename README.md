@@ -22,20 +22,40 @@ This session is associated with a randomly generated unique ID, which is created
 
 - The generated session ID is then sent to the user’s browser and stored as a cookie, while the session data is stored on the server-side.Now, when the browser send a request to the server, it’ll send the cookies with the request.The server will receive the cookie from the incoming request and retrieve the value of the session ID.
 
- <center> ![How Session id is sent to the user browser](https://user-images.githubusercontent.com/34595361/213847155-8d94e041-3ace-4628-9486-e3f696cd6668.png) </center>center>
+  ![How Session id is sent to the user browser](https://user-images.githubusercontent.com/34595361/213847155-8d94e041-3ace-4628-9486-e3f696cd6668.png){ width="800" height="600" style="display: block; margin: 0 auto" } 
 
 -  Afterwards, the server will search for the session and retrieve all the data stored within it once it is found.
 
 -  Well, The cookie store the session ID of the active session. PHPSESSID is the default name given by the PHP back-end server that created the session ID.
 
-- Let’s take a closer look at our previous example to understand what is happening in more detail.When you log in, a session is created with a unique ID (session ID). The session ID will be sent to the user’s browser.The server will then create a session variable auth_user ( for example ) and store in it the information of the actual logged in user. The session data will be stored in a file on the server side. The name of the file will be the session ID.
+- Let’s take a closer look at our example to understand what is happening in more detail.When you log in, a session is created with a unique ID (session ID). The session ID will be sent to the user’s browser.The server will then create a session variable auth_user ( for example ) and store in it the information of the actual logged in user. The session data will be stored in a file on the server side. The name of the file will be the session ID.
 
 - When the user request the dashboard page, the browser will send the cookie that contain the session ID with the request.The server receives an incoming request, retrieves the session ID, and searches for the associated session. Once the session is found, the server retrieves the data.Finally, the server will need to check the existence the that auth_user session variable. If he found it, the server will give the access to the dashboard page.
 
-- Sessions are often used to store sensitive information such as user credentials and financial data. They are more secure than cookies because the information is stored on the server-side and not on the client-side.
+- **Sessions are often used to store sensitive information such as user credentials and financial data. They are more secure than cookies because the information is stored on the server-side and not on the client-side.**
 
 - Session data are stored in a file in the server. Well, you should know that the session data are stored in different ways depending on the configuration.For example, in PHP the default mechanism is to store the session in the file system This provides the advantage of simple file-based storage and the ability for sessions to exist for long periods of time.
 
 - Another way is to store the session data in a database, there are several advantages. You have better control over the length of a session, as you can control when the session data is cleared out. You have better security because the data is not stored in a common area.
   
 - Most of the time, the session is stored in the cache for performance purposes, for example, if a website has a lot of users, it will be a good practice to store the session file in a cache so that the retrieval process will be fast.
+
+## Cookies:
+- Cookies provide a way for web applications to store information in the user’s browser. This information can be retrieved every time the user requests a page from the same web server that created the cookies.
+
+- Cookies can be either first-party or third-party. First-party cookies are created by the website that the user is visiting, while third-party cookies are created by domains other than the website being visited. Third-party cookies are often used for advertising and tracking purposes.
+
+![Examples of cookies in the browser](https://learnhindituts.com/assets/images/php/cookie.jpg){ width="800" height="600" style="display: block; margin: 0 auto" } 
+
+- When a browser request a web page, the server create a cookie and return it to the browser as part of the response. The browser then store that cookie in the user’s computer.Cookies have a expired date that’s set by the server, when that date come, the cookie will be deleted from the user’s browser.The browser send back that cookie each time it request a web page from that server. Browsers generally accept only **20 cookie from each site, and 300 cookies in total**.
+
+###Summary 
+- Cookies are text string stored as key/value
+- The server Create the cookie and send it to the user’s browser where it’ll be stored.
+- The Browser will send that cookie every time it send a request to that server.
+
+## Conclusion
+- **Sessions and Cookies are both important concepts in web development. Cookies are used to store user-specific data on the client-side, while sessions are used to store information on the server-side. Sessions are more secure than cookies because the data is stored on the server-side. Understanding the differences between the two can help developers choose the appropriate method for storing and retrieving information about users.**
+
+## About me
+- My name is Raj Kariya, currently a web devloper intern, working in **PHP, Laravel, Node js, React js technologies**. I like to share my knowledge with people, that why I’m here writing articles about computer science and web development topics.
