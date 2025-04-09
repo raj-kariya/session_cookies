@@ -22,7 +22,7 @@ This session is associated with a randomly generated unique ID, which is created
 
 - The generated session ID is then sent to the user’s browser and stored as a cookie, while the session data is stored on the server-side.Now, when the browser send a request to the server, it’ll send the cookies with the request.The server will receive the cookie from the incoming request and retrieve the value of the session ID.
 
-  ![How Session id is sent to the user browser](https://user-images.githubusercontent.com/34595361/213847155-8d94e041-3ace-4628-9486-e3f696cd6668.png){ width="800" height="600" style="display: block; margin: 0 auto" } 
+  ![How Session id is sent to the user browser](https://user-images.githubusercontent.com/34595361/213847155-8d94e041-3ace-4628-9486-e3f696cd6668.png)
 
 -  Afterwards, the server will search for the session and retrieve all the data stored within it once it is found.
 
@@ -45,7 +45,7 @@ This session is associated with a randomly generated unique ID, which is created
 
 - Cookies can be either first-party or third-party. First-party cookies are created by the website that the user is visiting, while third-party cookies are created by domains other than the website being visited. Third-party cookies are often used for advertising and tracking purposes.
 
-![Examples of cookies in the browser](https://learnhindituts.com/assets/images/php/cookie.jpg){ width="800" height="600" style="display: block; margin: 0 auto" } 
+![Examples of cookies in the browser](https://learnhindituts.com/assets/images/php/cookie.jpg) 
 
 - When a browser request a web page, the server create a cookie and return it to the browser as part of the response. The browser then store that cookie in the user’s computer.Cookies have a expired date that’s set by the server, when that date come, the cookie will be deleted from the user’s browser.The browser send back that cookie each time it request a web page from that server. Browsers generally accept only **20 cookie from each site, and 300 cookies in total**.
 
