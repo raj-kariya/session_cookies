@@ -22,7 +22,7 @@ This session is associated with a randomly generated unique ID, which is created
 
 - The generated session ID is then sent to the user’s browser and stored as a cookie, while the session data is stored on the server-side.Now, when the browser send a request to the server, it’ll send the cookies with the request.The server will receive the cookie from the incoming request and retrieve the value of the session ID.
 
- ![How Session id is sent to the user browser](https://user-images.githubusercontent.com/34595361/213847155-8d94e041-3ace-4628-9486-e3f696cd6668.png)
+ <center> ![How Session id is sent to the user browser](https://user-images.githubusercontent.com/34595361/213847155-8d94e041-3ace-4628-9486-e3f696cd6668.png) </center>center>
 
 -  Afterwards, the server will search for the session and retrieve all the data stored within it once it is found.
 
